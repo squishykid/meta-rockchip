@@ -3,7 +3,7 @@ MACHINEOVERRIDES =. "rock-pi-4:"
 
 require conf/machine/include/rk3399.inc
 
-RK_BOOT_DEVICE = "mmcblk1"
+RK_BOOT_DEVICE ?= "mmcblk1"
 WKS_FILE ?= "rock-pi-4.wks"
 IMAGE_FSTYPES += "wic wic.bmap"
 
